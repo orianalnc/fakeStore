@@ -1,1 +1,67 @@
 /* You can add global styles to this file, and also import other style files */
+
+
+/* Importing Bootstrap SCSS file. */
+@import '../node_modules/bootstrap/scss/bootstrap';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800&display=swap');
+
+*{
+  font-family: 'Montserrat', sans-serif;
+}
+
+.price{
+  color: #132139;
+  font-size: 20px;
+  font-weight: 800;
+
+}
+.category{
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  p{
+    margin-bottom: 10px;
+    margin-top: 10px;
+    color: #2F6B8E;
+  }
+
+}
+p{
+  color: #010304;;
+}
+
+h5{
+  font-size: 18px;
+}
+
+.card{
+
+  min-height: 350px;
+  .card-body{
+    h5{
+      font-weight: 700;
+    }
+    .category{
+      p{
+        margin-bottom: 0;
+        margin-top: 0;
+      }
+
+    }
+
+  }
+  .card-image{
+    padding: 10px;
+    height: 200px;
+    width: 100%;
+    object-fit: contain;
+  }
+}
+
+.btn{
+ &.btn-primary{
+    background-color: #2F6B8E !important;
+    border: none;
+
+  }
+}

@@ -1,0 +1,34 @@
+<div class="container" *ngIf="products">
+
+  <div class="mb-5">
+    <h4>Detalles del producto </h4>
+  </div>
+
+
+
+  <div class="row">
+    <div class="col-12 col-lg-5">
+      <img src="{{products.image}}" class="img-fluid" alt="...">
+    </div>
+
+    <div class="col-12 offset-0  offset-lg-1 col-lg-6">
+      <h2 class="card-title">{{ products.title }}</h2>
+      <div class="category">
+        <p >{{ products.category }}</p>
+      </div>
+
+      <p class="card-subtitle mb-4 text-body-secondary">{{ products.description }}</p>
+      <small class="price"> {{products.price | currency }}</small>
+    </div>
+
+  </div>
+
+
+
+
+
+
+  <button class="btn btn-primary mt-5" (click)="onBack()">Volver</button>
+
+
+</div>
