@@ -16,12 +16,16 @@ export class ProductsService {
   };
 
   constructor(private httpClient: HttpClient) { }
-  
+
   getAll(): Observable<any> {
     return this.httpClient.get<any>(`${this.apiURL}/products`,);
   }
 
   getDetail(id: number): Observable<any> {
     return this.httpClient.get<any>(`${this.apiURL}/products/${id}`,);
+  }
+
+  getAllCategories(): Observable<any> {
+    return this.httpClient.get<any>(`${this.apiURL}/products/categories`,);
   }
 }
